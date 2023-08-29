@@ -4,6 +4,9 @@ import React from "react"
 export default function Vans() {
 
     const [vans, setVans] = React.useState([])
+
+    const jajo = 15;
+    
     React.useEffect(() => {
         fetch("/api/vans")
             .then(res => res.json())
